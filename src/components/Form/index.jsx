@@ -2,13 +2,13 @@ import { useState } from "react"
 
 export const Form = ({addToList}) => {
 
-const [value, setValue] = useState('')
+    const [value, setValue] = useState('')
 
-const handleSubmit = (event) =>{
-    event.preventDefault()
-    addToList(value)
-   return setValue("");
-}
+    const handleSubmit = (event) =>{
+        event.preventDefault()
+        addToList(value)
+        return setValue("");
+    }
 
     return (
         <form 
